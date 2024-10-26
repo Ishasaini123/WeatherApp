@@ -10,9 +10,10 @@ import SearchPlace from "./asset/search.svg";
 import BackgroundColor from "./Components/BackgroundColor";
 import Animation from "./Components/Animation";
 
+
 function App() {
   // Variable declarations
-  const API_KEY = '27ac866f1386ef746274563f6351ebd1';
+  const API_KEY = process.env.API_URL;
   const [noData, setNoData] = useState();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectcity, setselectcity] = useState("Delhi");
